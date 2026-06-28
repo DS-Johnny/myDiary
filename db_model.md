@@ -8,9 +8,7 @@
 | username         |
 | email            |
 | password_hash    |
-| avatar_url       |
 | created_at       |
-| updated_at       |
 +------------------+
          |
          | 1:N
@@ -18,13 +16,12 @@
 +------------------+
 |     entries      |
 +------------------+
-| id PK            |
-| user_id FK       |
-| type_id FK       |
+| id_entry PK      |
+| id_user FK       |
+| type             |
 | title            |
 | content          |
 | audio_url        |
-| entry_date       |
 | favorite         |
 | created_at       |
 | updated_at       |
